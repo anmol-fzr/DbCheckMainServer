@@ -1,0 +1,42 @@
+interface IBike {
+  make: string;
+  model: string;
+  year: Date;
+  type: string;
+  displacement?: string;
+  engine: string;
+  power?: string;
+  torque?: string;
+  fuel_system?: string;
+  ignition?: string;
+  gearbox: string;
+  transmission?: string;
+  clutch?: string;
+  frame?: string;
+  front_suspension: string;
+  rear_suspension: string;
+  front_tire: string;
+  rear_tire: string;
+  front_brakes: string;
+  rear_brakes: string;
+  total_weight?: string;
+  seat_height?: string;
+  total_height?: string;
+  total_length?: string;
+  total_width?: string;
+  ground_clearance?: string;
+  wheelbase?: string;
+  fuel_capacity?: string;
+  starter: string;
+  compression?: string;
+  bore_stroke?: string;
+  fuel_control?: string;
+  cooling?: "Air" | "Liquid";
+  dry_weight?: string;
+  lubrication?: string;
+  front_wheel_travel?: string;
+  rear_wheel_travel?: string;
+  top_speed?: string;
+}
+
+export default IBike;
