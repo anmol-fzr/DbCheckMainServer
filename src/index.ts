@@ -3,6 +3,7 @@ import morgan from "morgan";
 import env from "./util/env";
 import connectDb from "./config/mongo.config";
 import router from "./route";
+import adminRouter from "./route/add";
 
 const { PORT } = env;
 
@@ -10,8 +11,8 @@ const app: Application = express();
 connectDb();
 
 app.use(morgan("tiny"));
-
 app.use(router);
+app.use(adminRouter);
 
 app.get("/ping", (_: Request, res: Response) => {
   res.send("PONG");
